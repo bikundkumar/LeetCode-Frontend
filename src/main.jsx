@@ -1,43 +1,37 @@
 import React from "react";
-import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom"
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import './index.css'
+import "./index.css";
 import LoginPage from "./Login/Login";
+import SignupPage from "./Signup/Signup";
+import ProblemSetPage from "./ProblemSet/ProblemSet";
+import SingleProblemPage from "./SingleProblem/SingleProblem";
 
 const problems = [
   {
     id: 1,
-    title: "200. Number of Islands",
+    title: "200. Bitwise AND of Numbers Range",
     difficulty: "Medium",
-    acceptance: "62.2%",
+    acceptance: "42%",
   },
   {
     id: 2,
     title: "201. Bitwise AND of Numbers Range",
     difficulty: "Medium",
-    acceptance: "47.7",
+    acceptance: "412%",
   },
   {
     id: 3,
     title: "202. Happy Number",
     difficulty: "Easy",
-    acceptance: "58.0%",
+    acceptance: "54.9%",
   },
   {
     id: 4,
     title: "203. Remove Linked List Elements",
-    difficulty: "Easy",
-    acceptance: "51.7%",
-  },
-  {
-    id: 5,
-    title: "204. Count Primes",
-    difficulty: "Medium",
-    acceptance: "34.7%",
+    difficulty: "Hard",
+    acceptance: "42%",
   },
 ];
 
@@ -64,8 +58,8 @@ const router = createBrowserRouter([
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ReactProvider router={router} />
-  </React.StrictMode>,
-)
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);

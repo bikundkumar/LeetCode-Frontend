@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './Login.scss';
+import "./Login.scss";
 
 function LoginPage() {
   const [username, setUsername] = useState("");
@@ -14,7 +14,8 @@ function LoginPage() {
   };
 
   const handleLogin = () => {
-    console.log(`Login in with username: ${username}`);
+    // Here you can add your login logic, for example, sending a request to your server to authenticate the user
+    console.log(`Logging in with username: ${username}`);
   };
 
   return (
